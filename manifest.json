@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Code Helper",
+    "version": "1.0",
+    "description": "Code Helper is AI based extension which is used to solve Coding Questions on platform like Leetcode",
+    "permissions": [
+        "scripting",
+        "storage",
+        "activeTab",
+        "sidePanel",
+        "tabs"
+    ],
+    "action": {
+        "default_title": "Click to Open",
+        "default_popup":"index.html"
+    },
+    "background":{
+        "service_worker":"./src/service-worker.js"
+    },
+    "host_permissions":["https://leetcode.com/problems/*"]
+}

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": ["@babel/core"],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
+}
